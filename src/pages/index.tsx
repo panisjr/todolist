@@ -16,7 +16,7 @@ export default function Home() {
     <>
     <div className="container">
       <div className="item">Menu</div>
-      <div className="item">Today</div>
+      <div className="item">Today's</div>
       <div className="item">Task</div>
     </div>
     </>
