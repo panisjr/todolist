@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 export default function Home() {
   return (
     <>
-    <div className="container">
-      <div className="item">Menu</div>
-      <div className="item">Today's</div>
-      <div className="item">Task</div>
+    <div className="column-xl text-white flex justify-around items-center max-w-screen">
+      <div className="bg-slate-900">Menu</div>
+      <div className="bg-green-900">Today's</div>
+      <div className="bg-gray-200">Task</div>
     </div>
     </>
   );
