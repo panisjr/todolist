@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # todolist
+=======
+>>>>>>> 242b09ea2e9092a78b99c6e8e002e520dcf3c456
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
 ## Getting Started
