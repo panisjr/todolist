@@ -9,7 +9,7 @@ const Menu = () => {
       <div className="h-full text-white bg-slate-900 w-2xs rounded-lg flex flex-col justify-between p-5">
         {/* Burger Menu */}
         <header className="flex justify-between items-center border-b border-gray-700 pb-3">
-          <h5 className="">Mednu</h5>
+          <h5 className="">Menu</h5>
           <IoIosMenu className="cursor-pointer text-2xl" />
         </header>
         {/* Search Field */}
