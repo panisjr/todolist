@@ -1,24 +1,23 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import Content from "./component/content";
+import Menu from "./component/menu";
+import { Poppins } from "next/font/google"; // ✅ NEW (built-in)
+import Task from "./component/task";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Load the font
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "700"], // Adjust weights as needed
+  variable: "--font-poppins", // Define CSS variable
 });
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export default function Home() {
   return (
     <>
-    <div className="column-xl text-white flex justify-around items-center max-w-screen">
-      <div className="bg-slate-900">Menu</div>
-      <div className="bg-green-900">Today's</div>
-      <div className="bg-gray-200">Task</div>
-    </div>
+    {/* ${poppins.classname} */}
+      <div className={` font-sans p-3 flex h-screen items-center`}>
+        <Menu />
+        <Content/>
+        <Task/>
+      </div>
     </>
   );
 }
