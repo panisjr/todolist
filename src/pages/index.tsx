@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
     {/* ${poppins.classname} */}
-      <div className={` font-sans p-3 flex h-screen items-center`}>
+      <div className={`${poppins.className} font-sans p-3 flex h-screen items-center`}>
         <Menu />
         <Content/>
         <Task/>

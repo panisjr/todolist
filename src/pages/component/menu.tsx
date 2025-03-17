@@ -3,6 +3,9 @@ import { IoIosMenu } from "react-icons/io";
 import { MdKeyboardDoubleArrowRight, MdStickyNote2 } from "react-icons/md";
 import { LiaListAlt } from "react-icons/lia";
 import { IoCalendarOutline } from "react-icons/io5";
+import { PiStickerFill } from "react-icons/pi";
+import { LuPlus } from "react-icons/lu";
+
 const Menu = () => {
   return (
     <>
@@ -71,46 +74,50 @@ const Menu = () => {
           </div>
           {/* Group 2 */}
           <div>
-            <p className="text-xs py-2">LIST</p>
+            <p className="text-xs py-2 pl-2">LIST</p>
             <div>
-              <div className="flex">
-                <button className="flex items-center w-full gap-4">
-                  <MdStickyNote2 className="text-2xl" /> Personal
-                </button>
-                <p>3</p>
-              </div>
-              <div className="flex">
-                <button className="flex items-center w-full gap-4">
-                  <MdStickyNote2 className="text-2xl" /> Work
-                </button>
-                <p></p>
-              </div>
-              <div className="flex">
-                <button className="flex items-center w-full gap-4">
-                  <MdStickyNote2 className="text-2xl" />List 1
-                </button>
-                <p>3</p>
-              </div>
-              <div className="flex">
-                <button className="flex items-center w-full gap-4">
-                  <MdStickyNote2 className="text-2xl" /> Add New List
-                </button>
-                <p>3</p>
+              <div className="flex flex-col pl-2 space-y-3">
+                <div className="flex">
+                  <button className="flex items-center w-full gap-4">
+                    <PiStickerFill className="text-2xl text-amber-500" />{" "}
+                    Personal
+                  </button>
+                  <p>3</p>
+                </div>
+                <div className="flex">
+                  <button className="flex items-center w-full gap-4">
+                    <PiStickerFill className="text-2xl text-pink-500" /> Work
+                  </button>
+                  <p></p>
+                </div>
+                <div className="flex">
+                  <button className="flex items-center w-full gap-4">
+                    <PiStickerFill className="text-2xl text-green-500" />
+                    List 1
+                  </button>
+                  <p>3</p>
+                </div>
+                <div className="flex">
+                  <button className="flex items-center w-full gap-4">
+                    <LuPlus className="text-2xl" /> Add New List
+                  </button>
+                  <p>3</p>
+                </div>
               </div>
             </div>
           </div>
           {/* Group 3 */}
           <div>
             <p className="text-xs py-2">TAGS</p>
-            <div className="flex flex-row items-align justify-center gap-5">
-              <div>
+            <div className="flex flex-row items-align justify-center gap-5 text-black">
+              <div className="bg-amber-100 p-2">
                 <p>Tag 1</p>
               </div>
               <div>
                 <p>Tag 2</p>
               </div>
-              <div>
-                <p>Add Tag</p>
+              <div className="flex">
+              <LuPlus className="text-2xl" /> <p>Add Tag</p>
               </div>
             </div>
           </div>
