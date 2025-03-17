@@ -44,28 +44,28 @@ const Menu = () => {
             <p className="text-xs py-2">TASKS</p>
             <div className="flex flex-col pl-2 space-y-3">
               <div className="flex">
-                <button className="flex items-center w-full gap-4">
+                <button className="flex items-center w-full gap-4 cursor-pointer">
                   <MdKeyboardDoubleArrowRight className="text-2xl" />
                   Upcoming
                 </button>
                 <p>23</p>
               </div>
               <div className="flex">
-                <button className="flex items-center w-full gap-4">
+                <button className="flex items-center w-full gap-4 cursor-pointer">
                   <LiaListAlt className="text-2xl" />
                   Today
                 </button>
                 <p>2</p>
               </div>
               <div className="flex">
-                <button className="flex items-center w-full gap-4">
+                <button className="flex items-center w-full gap-4 cursor-pointer">
                   <IoCalendarOutline className="text-2xl" />
                   Calendar
                 </button>
                 <p></p>
               </div>
               <div className="flex">
-                <button className="flex items-center w-full gap-4">
+                <button className="flex items-center w-full gap-4 cursor-pointer">
                   <MdStickyNote2 className="text-2xl" /> Sticky Wall
                 </button>
                 <p>3</p>
@@ -78,27 +78,27 @@ const Menu = () => {
             <div>
               <div className="flex flex-col pl-2 space-y-3">
                 <div className="flex">
-                  <button className="flex items-center w-full gap-4">
+                  <button className="flex items-center w-full gap-4 cursor-pointer">
                     <PiStickerFill className="text-2xl text-amber-500" />{" "}
                     Personal
                   </button>
                   <p>3</p>
                 </div>
                 <div className="flex">
-                  <button className="flex items-center w-full gap-4">
+                  <button className="flex items-center w-full gap-4 cursor-pointer">
                     <PiStickerFill className="text-2xl text-pink-500" /> Work
                   </button>
                   <p></p>
                 </div>
                 <div className="flex">
-                  <button className="flex items-center w-full gap-4">
+                  <button className="flex items-center w-full gap-4 cursor-pointer">
                     <PiStickerFill className="text-2xl text-green-500" />
                     List 1
                   </button>
                   <p>3</p>
                 </div>
                 <div className="flex">
-                  <button className="flex items-center w-full gap-4">
+                  <button className="flex items-center w-full gap-4 cursor-pointer">
                     <LuPlus className="text-2xl" /> Add New List
                   </button>
                   <p>3</p>
@@ -110,14 +110,14 @@ const Menu = () => {
           <div>
             <p className="text-xs py-2">TAGS</p>
             <div className="flex flex-row items-align justify-center gap-5 text-black">
-              <div className="bg-amber-100 p-2">
+              <div className="bg-amber-100 rounded p-2">
                 <p>Tag 1</p>
               </div>
-              <div>
+              <div className="bg-amber-100 rounded p-2">
                 <p>Tag 2</p>
               </div>
-              <div className="flex">
-              <LuPlus className="text-2xl" /> <p>Add Tag</p>
+              <div className="flex bg-gray-100 rounded p-2 items-center cursor-pointer">
+              <LuPlus className="text-sm" /> <p className="text-sm">Add Tag</p>
               </div>
             </div>
           </div>
